@@ -18,7 +18,6 @@
   </div>
 */
 
-
 function createCarousel () {
   const carousel = document.createElement('div');
   const leftBtn = document.createElement('div');
@@ -34,10 +33,10 @@ function createCarousel () {
 
   leftBtn.textContent = ` \u003C `;
   rightBtn.textContent = ` \u003E `;
-  img1.src = "./assets/carousel/mountains.jpeg";
-  img2.src = "./assets/carousel/computer.jpeg";
-  img3.src = "./assets/carousel/trees.jpeg";
-  img4.src = "./assets/carousel/turntable.jpeg";
+  img1.src = 'assets/carousel/mountains.jpeg';
+  img2.src = 'assets/carousel/computer.jpeg';
+  img3.src = 'assets/carousel/trees.jpeg';
+  img4.src = 'assets/carousel/turntable.jpeg';
 
   carousel.append(leftBtn);
   carousel.append(img1);
@@ -46,6 +45,16 @@ function createCarousel () {
   carousel.append(img4);
   carousel.append(rightBtn);
 
+
+  leftBtn.addEventListener('click', () => {
+
+  })
+
+
 return carousel;
 
 }
+
+const carouselContainer = document.querySelector('.carousel-container')
+
+carouselContainer.append(createCarousel());
