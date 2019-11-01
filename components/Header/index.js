@@ -27,10 +27,11 @@ header.append(date);
 header.append(headerTitle);
 header.append(temp);
 
+console.log(`Header component working.`)
+
 return header;
 
 }
 
 const headerContainer = document.querySelector('.header-container');
-
 headerContainer.append(Header());
