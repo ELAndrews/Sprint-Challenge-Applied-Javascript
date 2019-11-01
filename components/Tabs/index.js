@@ -8,10 +8,10 @@
 //  The tab component should look like this:
 //    <div class="tab">topic here</div>
 
-function createTab (obj) {
+function createTab (data) {
     const tab = document.createElement('div');
     tab.classList.add('tab');
-    tab.textContent = obj.data;
+    tab.textContent = data;
 
     return tab;
 }
